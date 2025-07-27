@@ -11,9 +11,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('creators')->group(function () {
-    Route::get('/test',[CreatorController::class,'test']);
     // Main search endpoint
-    Route::get('/search', [CreatorController::class, 'search']);
+    Route::get('/search', [CreatorController::class, 'search']);// Main search endpoint
 
     // Filter-specific endpoints
     Route::get('/trending', [CreatorController::class, 'trending']);
@@ -26,3 +25,8 @@ Route::prefix('creators')->group(function () {
     // Get available filter options
     Route::get('/filter-options', [CreatorController::class, 'getFilterOptions']);
 });
+
+
+
+
+
