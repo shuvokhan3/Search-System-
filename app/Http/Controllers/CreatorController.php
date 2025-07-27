@@ -316,7 +316,5 @@ class CreatorController extends Controller
         ];
     }
 
-    public function test(){
-        return "Hello word";
-    }
+
 }
